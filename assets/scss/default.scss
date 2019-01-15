@@ -1,0 +1,40 @@
+//mobile
+body {
+    background: yellow;
+}
+
+header {
+
+    #cart {
+	display: flex;
+	margin-left: 70%;
+	margin-right: 2%;
+	border: 1px solid red;
+	width: 30%;
+
+	img {
+	    width: 100%;
+	}
+
+	#counter {
+	    font-size: 2em;
+	}
+    }
+}
+
+#container {
+
+    .arrow {
+
+	width: 10%;
+	border: 1px solid black
+    }
+
+    #itemConatainer {
+	.item {
+	    display: flex;
+	    background: lightgreen;
+	}
+    }
+}
+// tablet and desktop

@@ -1,0 +1,22 @@
+body {
+  background: yellow; }
+
+header #cart {
+  display: flex;
+  margin-left: 70%;
+  margin-right: 2%;
+  border: 1px solid red;
+  width: 30%; }
+  header #cart img {
+    width: 100%; }
+  header #cart #counter {
+    font-size: 2em; }
+
+#container .arrow {
+  width: 10%;
+  border: 1px solid black; }
+#container #itemConatainer .item {
+  display: flex;
+  background: lightgreen; }
+
+/*# sourceMappingURL=default.css.map */
