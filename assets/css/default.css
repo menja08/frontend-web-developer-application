@@ -12,11 +12,30 @@ header #cart {
   header #cart #counter {
     font-size: 2em; }
 
-#container .arrow {
-  width: 10%;
-  border: 1px solid black; }
-#container #itemConatainer .item {
-  display: flex;
-  background: lightgreen; }
+#container {
+  border: 1px solid red;
+  display: flex; }
+  #container .arrow {
+    width: 10%;
+    border: 1px solid black; }
+  #container #leftArrow {
+    margin-top: 20%; }
+  #container #itemContainer {
+    width: 90%;
+    border: 1px solid blue; }
+    #container #itemContainer .item {
+      display: flex;
+      background: lightgreen;
+      width: 100%; }
+      #container #itemContainer .item img {
+        width: 100%; }
+
+@media screen and (min-width: 401px) {
+  header #cart {
+    width: 10%;
+    margin-left: 90%; }
+
+  #container .arrow {
+    display: none; } }
 
 /*# sourceMappingURL=default.css.map */
