@@ -1,52 +1,78 @@
 //mobile
 body {
-    background: yellow;
+    background: lightgreen;
+	width: 100%;
 }
 
 header {
+  width: 100%;
+  // background: cornflowerblue;
 
-    #cart {
-	display: flex;
-	margin-left: 70%;
-	margin-right: 2%;
-	border: 1px solid red;
-	width: 30%;
+	#cart {
+		display: flex;
+		// margin-left: 70%;
+      margin-left: 0;
+		margin-right: 2%;
+		// border: 1px solid blue;
+		width: 20%;
+		// height: 20%;
 
-	img {
-	    width: 100%;
+		img {
+			width: 100%;
+          height: 20%;
+		}
+
+		#counter {
+			font-size: 2em;
+		}
+
+
 	}
 
-	#counter {
-	    font-size: 2em;
-	}
+  #cartValues {
+    margin-top: 2%;
+    display: block;
+    section {
+      margin-top: 2%;
+      width: 100%;
+      // border: 1px solid red;
     }
+  }
 }
 
 #container {
-    border: 1px solid red;
+    //border: 1px solid red;
+  margin-top: 2%;
     display: flex;
+  width: 100%;
 
     .arrow {
 
-	width: 10%;
-	border: 1px solid black
+      width: 10%;
+      height: 10%;
+      // border: 1px solid black;
     }
 
-    #leftArrow {
-	margin-top: 20%;
-    }
+  #leftArrow, #rightArrow {
+    margin-top: 30%;
+  }
 
     #itemContainer {
-	width: 90%;
+      display: flex;
+	width: 80%;
+      // overflow: hidden;
 	
-	border: 1px solid blue;
+	// border: 1px solid blue;
 	
 	.item {
 	    display: flex;
-	    background: lightgreen;
+      flex-direction: column;
+	    // background: lightgreen;
 	    width: 100%;
+      // overflow: hidden;
 	    img {
 		width: 100%;
+          // border: 1px solid black;
 	    }
 	}
     }
@@ -55,17 +81,53 @@ header {
 // tablet and desktop
 
 @media screen and (min-width: 401px) {
+  body {
+    margin: auto;
+    width: 80%;
+  }
     header {
 	#cart {
-	    width: 10%;
-	    margin-left: 90%;
+	    width: 5%;
+	    // margin-left: 90%;
 	}
     }
 
     #container {
+      text-align: center;
 
 	.arrow {
 	    display: none;
 	}
+
+      #itemContainer {
+        display: block;
+        margin-left: 10%;
+        margin-right: 5%;
+
+        .item {
+          display: flex;
+          // background: lightsalmon;
+          width: 100%;
+          margin-top: 2%;
+          flex-direction: row;
+          img {
+            width: 30%;
+            // border: 1px solid lightgreen;
+          }
+
+          button {
+            height: 10%;
+            display: block;
+            width: 20%;
+          }
+
+          p{
+            width: 100%;
+          }
+        }
+
+
+
+      }
     }
 }

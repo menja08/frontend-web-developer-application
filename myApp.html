@@ -3,52 +3,63 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>MY APP</title>
-  <link href="assets/css/default.css" rel="stylesheet">
+  <!--<link href="assets/css/default.css" rel="stylesheet">-->
+  <link rel="stylesheet" href="assets/scss/default.css">
 </head>
 
 <body>
   <header>
    <section id="cart">
-    <img src="assets/icons/shopping-cart.png"><section id="counter">0</section>
+    <img src="assets/icons/shopping-cart.png">
+     <section id="counter">0</section>
+
    </section>
+    <section id="cartValues">
+      <section>You have: HTC <span id="htc">0</span> phones</section>
+
+      <section>Huawei <span id="huawei">0</span> phones</section>
+      <section>Samsung <span id="samsung">0</span> phones</section>
+      <section>your total is : <button id="total">click to see total</button></section>
+      <button id="deleteAll">Delete All</button>
+    </section>
   </header>
 
   <!--list of products-->
   <section id="container">
-    <img id="leftArrow" class="arrow" src="assets/icons/left-arrow.png">
-    <section id="itemContainer"><!--mobile-->
-    <section class="item">
-      <img src="assets/images/htc-u12-smartphone-keramisk-sort.jpg">
-      <!--description text-->
-      <p>
-	THE NEW HTC U12
-      </p>
-      <p>2500 kr</p>
-      <button id="button1">Add to cart</button>
-      <button id="removeButton1">Remove item</button>
+    <img id="leftArrow" class="arrow" src="assets/icons/left-arrow.png"><!--mobile-->
+    <section id="itemContainer">
+      <section class="item">
+        <img src="assets/images/htc-u12-smartphone-keramisk-sort.jpg">
+        <!--description text-->
+        <p>
+          THE NEW HTC U12
+        </p>
+        <p>2500 kr</p>
+        <button id="button1">Add to cart</button>
+        <button id="removeButton1">Remove item</button>
+      </section>
+      <section class="item">
+        <img src="assets/images/huawei-p20-lite-64-gb-smartphone-midnight-black.jpg">
+        <!--description text-->
+        <p>
+          THE NEW HUAWEI P20 LITE 64GB
+        </p>
+        <p>3500 kr</p>
+        <button id="button2">Add to cart</button>
+        <button id="removeButton2">Remove item</button>
+      </section>
+      <section class="item">
+        <img src="assets/images/samsung-galaxy-a9-2018-smartphone-lemonade-blue.jpg">
+        <!--description text-->
+        <p>
+          THE NEW SAMSUNG GALAXY A9 2018
+        </p>
+        <p>4500 kr</p>
+        <button id="button3">Add to cart</button>
+        <button id="removeButton3">Remove item</button>
+      </section>
     </section>
-    <section class="item">
-      <img src="assets/images/huawei-p20-lite-64-gb-smartphone-midnight-black.jpg">
-      <!--description text-->
-      <p>
-	THE NEW HUAWEI P20 LITE 64GB
-      </p>
-      <p>3500 kr</p>
-      <button id="button2">Add to cart</button>
-      <button id="removeButton2">Remove item</button>
-    </section>
-    <section class="item">
-      <img src="assets/images/samsung-galaxy-a9-2018-smartphone-lemonade-blue.jpg">
-      <!--description text-->
-      <p>
-	THE NEW SAMSUNG GALAXY A9 2018
-      </p>
-      <p>4500 kr</p>
-      <button id="button3">Add to cart</button>
-      <button id="removeButton3">Remove item</button>
-    </section>
-    </section>
-    <img id="rightArrow" class="arrow" src="assets/icons/right-arrow.png">
+    <img id="rightArrow" class="arrow" src="assets/icons/right-arrow.png"><!--mobile-->
   </section>
 
   <script src="assets/js/default.js"></script>
