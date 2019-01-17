@@ -8,7 +8,7 @@ function runImageSlider() {
     let itemContainerChildren = itemContainer.children;
 	// for mobile
     let screenSize = window.outerWidth;
-	if (screenSize < 401) {
+	if (screenSize < 480) {
 		for(let i=0; i < sliderLength; i++) {
 			 itemContainerChildren[i].style.display = "none";
 			 itemContainerChildren[0].style.display = "flex";
@@ -248,5 +248,8 @@ function runImageSlider() {
 	}
 
 }
-
 runImageSlider();
+window.addEventListener("resize", function () {
+	location.reload();
+});
+
